@@ -32,7 +32,7 @@ function App() {
     try {
       // Send the new message to the API in the specified format
       const response = await axios.post(
-        `${process.env.REACT_APP_API_URL}`,
+        `https://english-wing-assign.vercel.app`,
         newMessage
       );
       console.log(response.data.response);
